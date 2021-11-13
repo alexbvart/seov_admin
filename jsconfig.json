@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@styles/*": ["styles/*"],
+      "@hooks/*": ["hooks/*"],
+      "@module/*": ["module/*"],
+      "@services/*": ["services/*"],
+      "@components/*": ["src/Components/*"],
+      "@containers/*": ["src/Containers/*"],
+    }
+  },
+  "exclude": ["node_modules", ".next", "dist"]
+}

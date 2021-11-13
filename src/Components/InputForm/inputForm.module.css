@@ -1,0 +1,120 @@
+.input_container{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px 0px 10px;
+  margin: 12px 0 18px 0;
+  cursor: pointer
+}
+.input_container label{
+  color: var(--txt-active);
+}
+.input_container select{
+  /* -webkit-appearance: none; */
+  font-family: inherit;
+  transition: all 150ms ease;
+  outline: none;
+/*   background-color: green; */
+}
+.input_container select:focus {
+  outline: none;
+  background-color: var(--bg-3-form);
+  
+/*   border-color: red;
+  box-shadow: 0 0 0 2px rgba(0, 255, 13, 0.2); */
+}
+
+.input_container select option:checked,
+.input_container select option:hover,
+.input_container select option:active,
+.input_container select option:focus
+{
+  background-color:var(--primary);
+  color: var(--txt-active);
+  height: 24px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+
+.input{
+  width: 100%;
+  border: none;
+  height: 44px;
+  background-color: transparent;
+  color: var(--txt-unactive);
+  font-size: 14px;
+  margin-top: 4px;
+  padding-left: 12px;
+  border-bottom: 2px solid var(--txt-unactive);
+  
+  /* background-color: rgba(251, 255, 0, 0.746); */
+}
+.input option{
+  background-color: transparent;
+  height: 24px;
+}
+.input::placeholder{
+  color: var(--txt-unactive);
+  font-size: 14px;
+}
+
+.input:focus{
+  outline: none;
+}
+
+.span_6{
+  width: 100%;
+/*   background-color: red;
+  grid-column: 1 / span 3; */
+}
+.span_3{
+  width: 50%;
+}
+.span_2{
+  width: calc((100% / 6) * 2);
+}
+.span_1_5{
+  width: calc((100% / 6) * 1.5);
+}
+.span_1{
+  width: calc((100% / 6) * 1);
+}
+
+
+
+.right_side{
+  display: flex;
+  align-items: center;
+}
+
+.characters_remaining, .toggle_visibility_pass{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-bottom: 4px;
+  background-color: var(--bg-3-form);
+  color: var(--txt-active);
+  border-radius: 12px;
+  width: 2.8rem;
+  height: 2.2rem;
+}
+
+.toggle_visibility_pass{
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.toggle_visibility_pass img{
+  width: 2rem;
+}
+
+.visible{
+  display: block;
+}
+
+.hidden{
+  display: none;
+}

@@ -1,0 +1,141 @@
+{
+  "carreras": [
+    {
+      "id": 1,
+      "title": "COMPOSITOR"
+    },
+    {
+      "id": 2,
+      "title": "ACTOR"
+    },
+    {
+      "id": 3,
+      "title": "ARQUITECTURA"
+    },
+    {
+      "id": 4,
+      "title": "PUBLICISTA"
+    },
+    {
+      "id": 5,
+      "title": "COMUNICACION AUDIOVISUA"
+    },
+    {
+      "id": 6,
+      "title": "CIENCIAS DE LA COMUNICACION"
+    },
+    {
+      "id": 7,
+      "title": "PUBLICISTA GRAFICO"
+    },
+    {
+      "id": 8,
+      "title": "TURISMO"
+    },
+    {
+      "id": 9,
+      "title": "PERIODISMO"
+    },
+    {
+      "id": 10,
+      "title": "ING. QUIMICO"
+    },
+    {
+      "id": 11,
+      "title": "ING. DE SONIDO"
+    },
+    {
+      "id": 12,
+      "title": "GEOLOGIA"
+    },
+    {
+      "id": 13,
+      "title": "MATEMATICAS"
+    },
+    {
+      "id": 14,
+      "title": "METEOROLOGIA"
+    },
+    {
+      "id": 15,
+      "title": "MEDICINA VETERINARIA"
+    },
+    {
+      "id": 16,
+      "title": "MEDICINA HUMANA"
+    },
+    {
+      "id": 17,
+      "title": "ZOOTECNIA"
+    }
+  ],
+  "alumnos": [
+    {
+      "dni": "73693059",
+      "apellidos": "CRISTHIAN RICARDO CHANTA SANTOS",
+      "telefono": "973693059",
+      "direccion": " ",
+      "id": 10
+    },
+    {
+      "dni": "73693051",
+      "apellidos": "EDERSON ELIEL CONTRERAS VENTURA",
+      "telefono": "973693051",
+      "direccion": " ",
+      "id": 12
+    },
+    {
+      "dni": "73693052",
+      "apellidos": "YENEFFER CARIN DE LA CRUZ MENDOZA",
+      "telefono": "973693052",
+      "direccion": " ",
+      "id": 13
+    },
+    {
+      "dni": "73693054",
+      "apellidos": "WILMER PURIHUAMAN REYES",
+      "telefono": "973693054",
+      "direccion": " ",
+      "id": 15
+    },
+    {
+      "nombre": "Juan Diego",
+      "apellido_paterno": "Rodriguez",
+      "apellido_materno": "Chavez",
+      "dni": "74569832",
+      "direccion": "Jr. Razuri #80",
+      "telefono": "974569832",
+      "id": 16
+    },
+    {
+      "nombre": "Martha Maria",
+      "apellido_paterno": "Flores",
+      "apellido_materno": "Nuñes",
+      "dni": "71459863",
+      "direccion": "Av. Lima #356",
+      "telefono": "971459863",
+      "id": 17
+    }
+  ],
+  "tutores": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "reglas": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "reportes": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ]
+}
