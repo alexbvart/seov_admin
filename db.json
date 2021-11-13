@@ -71,6 +71,27 @@
   ],
   "alumnos": [
     {
+      "dni": "73693053",
+      "apellidos": "FLOR ANALY PURIHUAMAN REYES",
+      "telefono": "973693053",
+      "direccion": " ",
+      "id": 7
+    },
+    {
+      "dni": "74693053",
+      "apellidos": "BETSY RUBI DIAZ QUISPESIVANA",
+      "telefono": "974693053",
+      "direccion": " ",
+      "id": 8
+    },
+    {
+      "dni": "77693053",
+      "apellidos": "JOSE JUNIOR ESPINOZA CABEL",
+      "telefono": "977693053",
+      "direccion": " ",
+      "id": 9
+    },
+    {
       "dni": "73693059",
       "apellidos": "CRISTHIAN RICARDO CHANTA SANTOS",
       "telefono": "973693059",
@@ -99,7 +120,7 @@
       "id": 15
     },
     {
-      "nombre": "Juan Diego",
+      "nombre": "Jose Diego",
       "apellido_paterno": "Rodriguez",
       "apellido_materno": "Chavez",
       "dni": "74569832",

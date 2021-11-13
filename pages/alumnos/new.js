@@ -50,7 +50,6 @@ const newSupplier = ({ }) => {
                     <Footer />
                 </Form>
             </Pane>
-
         </>
     );
 }

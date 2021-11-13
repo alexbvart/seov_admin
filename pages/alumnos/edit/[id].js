@@ -1,31 +1,47 @@
-import Footer from "@components/Footer/Footer";
-import { Input, Select, TextArea } from "@components/InputForm/Input";
-import Form from "@components/RegisterForm/Form";
 import { useRouter } from 'next/router'
+import swal from 'sweetalert';
+import { Pane } from 'evergreen-ui';
+import Link from 'next/link'
+import Form from '@components/Form/Form';
+import { Input } from '@components/InputForm/Input';
+import Footer from '@components/Form/Footer';
+import put from '@services/put'
 
-import DetailSideBar from "src/container/DetailSideBar";
-import putRequest from "module/put";
-
-const objectivesEdit = ({ objectives,objective, process }) => {
+const objectivesEdit = ({ alumno }) => {
     const router = useRouter()
     const onSubmit = async (data) => {
-        const res = await putRequest({ "src": "objective", "pup": data , "id":objective.id})
-        if(res.status="200") router.push("/objective")
+        const res = await put({ "src": "alumnos", "put": data , "id":alumno.id})
+        if(res.status="200") router.push("/alumnos")
     }
-    const processNames = process.map((p)=>p.name)
-
+    console.log(alumno)
     return (
         <>
-            <DetailSideBar title="Objectives" data={objectives}></DetailSideBar>
-
-            <section >
-            <Form onSubmit={onSubmit} title="Actualiza el objetivo"  defaultValues={objective}>
-                <Select name="process" span="6"  options={processNames} span="6" />
-                <Input name="name" span="6"  />
-                <TextArea name="description" span="6" />
-                <Footer />
-            </Form>
-            </section>
+        <>
+            <Pane >
+                <nav className="bg-grey-light rounded font-sans w-full py-6">
+                    <ol className="list-reset flex text-grey-dark">
+                        <li>
+                            <Link href="/alumnos">
+                                <a className="font-bold">Alumnos</a>
+                            </Link>
+                        </li>
+                        <li><span className="font-bold mx-2">/</span></li>
+                        <li>Renombrar</li>
+                        <li><span className="mx-2">/</span></li>
+                        <li>{alumno.nombre} {alumno.apellido_paterno} {alumno.apellido_materno}</li>
+                    </ol>
+                </nav>
+                <Form onSubmit={onSubmit} title="Registrar nuevo alumno" defaultValues={alumno} >
+                    <Input name="nombre" label="Nombre" span="3" />
+                    <Input name="apellido_paterno" label="Apellido paterno" span="3" />
+                    <Input name="apellido_materno" label="Apellido materno" span="3" />
+                    <Input name="dni" label="DNI" span="3" />
+                    <Input name="direccion" label="Dirección" span="3" />
+                    <Input name="telefono" label="Telefono" span="3" />
+                    <Footer />
+                </Form>
+            </Pane>
+        </>
         </>
     );
 }
@@ -37,18 +53,12 @@ export async function getServerSideProps(context) {
     const SERVER_HOST = "http://localhost:3001";
     const ENTERPRISE_ID = 2;
 
-    const objectives = await fetch(`${SERVER_HOST}/enterprise/${ENTERPRISE_ID}/objective`)
-    .then(res => res.json())
-    const objective = await fetch(`${SERVER_HOST}/enterprise/${ENTERPRISE_ID}/objective/?id=${params.id}`)
-    .then(res => res.json())
-    const process = await fetch(`${SERVER_HOST}/enterprise/${ENTERPRISE_ID}/process`)
+    const alumno = await fetch(`${SERVER_HOST}/alumnos/?id=${params.id}`)
     .then(res => res.json())
 
     return {
         props: {
-            objectives: objectives,
-            objective:objective[0],
-            process: process,
+            alumno:alumno[0],
         }
     };
 }

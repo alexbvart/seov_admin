@@ -102,7 +102,7 @@ const Objective = ({ alumnos }) => {
                                                         <Menu.Group>
 
                                                             <Menu.Item icon={EditIcon} >
-                                                                <Link href={`alumnos/${alumno.id}`}><a>Renombrar</a></Link>
+                                                                <Link href={`alumnos/edit/${alumno.id}`}><a>Renombrar</a></Link>
                                                             </Menu.Item>
                                                             <Menu.Item icon={TrashIcon}
                                                                 intent="danger"
