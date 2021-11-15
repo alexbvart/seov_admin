@@ -1,17 +1,17 @@
 import React, { useState,useEffect } from 'react';
-import { Heading, Pane, Table, Popover, Menu, Position, Button, TrashIcon, EditIcon, EyeOpenIcon } from 'evergreen-ui'
+import { Heading, Pane, Table, Popover, Menu, Position, Button, TrashIcon, EditIcon } from 'evergreen-ui'
 import ButtonLink from '@components/ButtonLink';
 import Link from 'next/link'
 import swal from 'sweetalert';
 import deleteById from '@services/deleteById';
 import getAll from '@services/getAll';
 
-const Objective = ({ alumnos }) => {
+const Objective = ({ tutores }) => {
     const [keyword, setKeyword] = useState("")
-    const [alumns, setAlumns] = useState(alumnos)
+    const [alumns, setAlumns] = useState(tutores)
 
         const loadData = async () => {
-            let data = await getAll({"src":"alumnos"})
+            let data = await getAll({"src":"tutores"})
             if (data.status == "200") {
                 setAlumns(data.data)
             }
@@ -42,7 +42,7 @@ const Objective = ({ alumnos }) => {
             });
     }
     const deleteAlumn = async(id)=>{
-        const res = await deleteById({ "src": "alumnos", "id": id })
+        const res = await deleteById({ "src": "tutores", "id": id })
         if (res.status = "201") {
             loadData()
             swal({
@@ -60,18 +60,18 @@ const Objective = ({ alumnos }) => {
     }
     useEffect(() => {
         loadData()
-    }, [alumnos])
+    }, [tutores])
 
     return (
         <>
 
             <div className="main main_container">
                 <Heading size={900} marginTop={0}>
-                    Alumnos del 5º grado registrados
+                    Tutores del 5º grado registrados
                 </Heading>
                 <br />
-                <ButtonLink href="alumnos/new" >
-                    Agregar una nueva alumno
+                <ButtonLink href="tutores/new" >
+                    Agregar una nuevo tutor
                 </ButtonLink>
                 <br />
                 <br />
@@ -82,6 +82,7 @@ const Objective = ({ alumnos }) => {
                             <Table.TextHeaderCell>DNI</Table.TextHeaderCell>
                             <Table.TextHeaderCell>Dirección</Table.TextHeaderCell>
                             <Table.TextHeaderCell>Telefono</Table.TextHeaderCell>
+                            <Table.TextHeaderCell>Responsable de</Table.TextHeaderCell>
                             <Table.TextHeaderCell>Operaciones</Table.TextHeaderCell>
                         </Table.Head>
                         <Table.Body height={400}>
@@ -94,6 +95,7 @@ const Objective = ({ alumnos }) => {
                                         <Table.TextCell>{alumno.dni}</Table.TextCell>
                                         <Table.TextCell>{alumno.direccion}</Table.TextCell>
                                         <Table.TextCell>{alumno.telefono}</Table.TextCell>
+                                        <Table.TextCell>seccion {alumno.seccion}</Table.TextCell>
                                         <Table.TextCell>
                                             <Popover
                                                 position={Position.BOTTOM_LEFT}
@@ -101,11 +103,8 @@ const Objective = ({ alumnos }) => {
                                                     <Menu>
                                                         <Menu.Group>
 
-                                                            <Menu.Item icon={EyeOpenIcon} >
-                                                                <Link href={`alumnos/${alumno.id}`}><a>Visitar</a></Link>
-                                                            </Menu.Item>
                                                             <Menu.Item icon={EditIcon} >
-                                                                <Link href={`alumnos/edit/${alumno.id}`}><a>Renombrar</a></Link>
+                                                                <Link href={`tutores/edit/${alumno.id}`}><a>Renombrar</a></Link>
                                                             </Menu.Item>
                                                             <Menu.Item icon={TrashIcon}
                                                                 intent="danger"
@@ -139,12 +138,12 @@ export async function getServerSideProps(context) {
     /* const { query } = params; */
     const SERVER_HOST = "http://localhost:3001";
 
-    const alumnos = await fetch(`${SERVER_HOST}/alumnos`)
+    const tutores = await fetch(`${SERVER_HOST}/tutores`)
         .then(res => res.json())
 
     return {
         props: {
-            alumnos
+            tutores
         }
     };
 }
