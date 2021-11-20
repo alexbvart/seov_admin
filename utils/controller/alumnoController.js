@@ -28,10 +28,9 @@ export const getById = (req, res) => {
     const values = [id];
     findById(values)
         .then(result => {
-            if (result.length > 0) {
-
+            if (result) {
                 res.status(200).json({
-                    message: 'Resultado',
+                    message: 'OK',
                     response: result
                 })
             } else {
@@ -54,11 +53,16 @@ export const createAlumno = (req, res) => {
 
     create(body)
         .then(result => {
-
-            res.status(200).json({
-                message: 'Registro creado',
-                response: result
-            })
+            if (result) {
+                res.status(200).json({
+                    message: 'Registro creado',
+                    response: result
+                })
+            } else {
+                res.status(500).json({
+                    message: 'Error al crear el registro'
+                })
+            }
         })
         .catch(err => {
             res.status(500).json({
@@ -74,7 +78,7 @@ export const deleteAlumno = (req, res) => {
     const values = [id];
     remove(values)
         .then(result => {
-            if (result.length > 0) {
+            if (result) {
                 res.status(200).json({
                     message: 'Registro eliminado',
                     response: result
@@ -98,10 +102,10 @@ export const updateAlumno = (req, res) => {
     const { body } = req;
     update(id, body)
         .then(result => {
-            if (result.length > 0) {
+            if (result) {
                 res.status(200).json({
                     message: 'Registro actualizado',
-                    response : result
+                    response: result
                 })
             } else {
                 res.status(404).json({
