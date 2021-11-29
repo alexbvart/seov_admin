@@ -7,11 +7,9 @@ export default (req, res) => {
 
     switch (method) {
         case 'GET':
-            res = getAll(req, res);
-            break;
+            return getAll(req, res);
         case 'POST':
-            res = createCarrera(req, res);
-            break;
+            return createCarrera(req, res);
         default:
             res.status(400).json({res : 'method invalid'})
             break;

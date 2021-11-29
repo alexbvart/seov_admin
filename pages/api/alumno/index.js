@@ -6,11 +6,9 @@ export default (req, res) => {
 
     switch (method) {
         case 'GET':
-            res = getAll(req, res);
-            break;
+            return getAll(req, res);
         case 'POST':
-            res = createAlumno(req, res);
-            break;
+            return createAlumno(req, res);
         default:
             res.status(400).json({res : 'method invalid'})
             break;
