@@ -86,7 +86,7 @@ const Objective = ({ alumnos }) => {
                         </Table.Head>
                         <Table.Body height={400}>
                             {alumns
-                                .filter(alumno => String(alumno.title).toUpperCase().includes(keyword.toUpperCase()))
+                                .filter(alumno => String(alumno.nombre).toUpperCase().includes(keyword.toUpperCase()))
                                 .map((alumno) => (
                                     <Table.Row key={alumno.id} >
 

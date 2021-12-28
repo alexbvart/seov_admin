@@ -26,12 +26,13 @@ const Objective = ({carreras}) => {
                         <Table.TextHeaderCell>Nombre</Table.TextHeaderCell>
                         <Table.SearchHeaderCell onChange={(value) => setKeyword(value)} placeholder="Busca por el nombre" />
                     </Table.Head>
-                    <Table.Body height={240}>
+                    <Table.Body height={500}>
                         {carreras
                             .filter(carrera => String(carrera.title).toUpperCase().includes(keyword.toUpperCase()))
                             .map((carrera) => (
                                 <Table.Row key={carrera.id} isSelectable onSelect={() => alert(carrera.name)}>
                                     <Table.TextCell>{carrera.title}</Table.TextCell>
+                                    <Table.TextCell>{carrera.description}</Table.TextCell>
                                 </Table.Row>
                             ))}
                     </Table.Body>
@@ -48,7 +49,7 @@ export async function getServerSideProps(context) {
     const { params } = context;
 
     /* const { query } = params; */
-        const SERVER_HOST = "http://localhost:3001";
+        const SERVER_HOST = "http://localhost:3005/api";
     
         const carreras = await fetch(`${SERVER_HOST}/carreras`)
         .then(res => res.json())

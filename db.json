@@ -67,6 +67,11 @@
     {
       "id": 17,
       "title": "ZOOTECNIA"
+    },
+    {
+      "title": "ING. SISTEMAS",
+      "description": "La ingeniería de sistemas es un campo interdisciplinario de la ingeniería que permite estudiar y comprender la realidad, con el propósito de implementar u optimizar sistemas complejos.",
+      "id": 18
     }
   ],
   "alumnos": [
@@ -137,7 +142,7 @@
       "nombre": "Jose Diego",
       "apellido_paterno": "Rodriguez",
       "apellido_materno": "Chavez",
-      "dni": "74569832",
+      "dni": "74569669",
       "direccion": "Jr. Razuri #80",
       "telefono": "974569832",
       "id": 16
@@ -242,5 +247,127 @@
   ],
   "reportes": [
     {}
+  ],
+  "items": [
+    {
+      "a": "¿Toma Ud. muy a pecho las pequeñas cosas cuya importancia sin embargo sabe que es la mínima?",
+      "b": "¿se trastorna a veces por insignificancias? O ¿Sólo le perturban los acontecimientos graves?"
+    },
+    {
+      "a": "¿Se entusiasma o indigna con facilidad? O",
+      "b": "¿Acepta Ud. tranquilamente las cosas tal como son?"
+    },
+    {
+      "a": "¿Es Ud. susceptible, se siente herido fácilmente y de manera profunda por una crítica algo viva o por una observación poco amable a burlona? ",
+      "b": "¿Soporta las críticas sin sentirse menoscabado?"
+    },
+    {
+      "a": "¿Se turba con facilidad ante un suceso improvisto?, ¿Se sobresalta cuando le llaman intempestivamente?, ¿Palidece o se ruboriza con facilidad? O",
+      "b": "¿No se desconcierta Ud. sino muy difícilmente?"
+    },
+    {
+      "a": "¿Se acalora Ud. al hablar?, ¿Eleva la voz en la conversación? ¿Siente la necesidad se emplear términos violentos o palabras demasiado expresivas? O",
+      "b": "¿Afronta Ud. la situación con serenidad?"
+    },
+    {
+      "a": "¿Se siente Ud. angustiado frente a una tarea nueva o ante una perspectivas de cambio? O",
+      "b": "¿Afronta la situación con serenidad?"
+    },
+    {
+      "a": "Pasa Ud. alternativamente de la exaltación al abatimiento. de la alegría a la tristeza y viceversa por tonterías y aún sin razón aparente? O",
+      "b": "¿Es de humor parejo?"
+    },
+    {
+      "a": "¿Se siente frecuentemente obsesionado con dudas y escrúpulos, a propósito de actos sin importancia, conserva Ud. a menudo en la mente un pensamiento completamente inútil y que aún lo inoportuna? O",
+      "b": "¿No conoce más que por excepción este penosa estado de preocupación?"
+    },
+    {
+      "a": "¿Le sucede a veces estar violentamente conmovido, que le resulta completamente imposible hacer lo que desearía en tales casos, ejemplo: experimenta estados de miedo que le impiden realizar cualquier movimiento o timidez que no le deja articular una sola palabra, etc.? O",
+      "b": "¿por el contrario, jamás lo ha experimentado?"
+    },
+    {
+      "a": "¿Se siente con frecuencia desgraciado? O",
+      "b": "¿Esta generalmente contento de su suerte y aun cuando las cosas no suceden como Ud. quiera, piensa más en lo que será necesario cambiar que en sus propios pensamientos?"
+    },
+    {
+      "a": "Suele Ud. ocuparse activamente durante sus horas libres (estudios suplementarios, alguna acción social, trabajos manuales o en cualquier tarea impuesta)? O",
+      "b": "¿Pasa largos ratos sin hacer nada, soñando?, meditando o simplemente distrayéndose (con lecturas entretenidas, escuchando la radio, etc. )"
+    },
+    {
+      "a": "¿Necesita Ud. realizar un esfuerzo penoso para pasar de la idea a la acción, de la decisión a la ejecución?",
+      "b": "¿Lleva a cabo inmediatamente y sin dificultad lo que ha decidido hacer?"
+    },
+    {
+      "a": "¿Se descorazona Ud. fácilmente ante las dificultades o ante una tarea que se anuncia demasiado ruda? O",
+      "b": "¿Por el contrario se siente estimulado por las dificultades y excitado por la idea del esfuerzo a realizar?"
+    },
+    {
+      "a": "¿Le gusta soñar y meditar ya sea sobre el pasado que se ha ido o sobre el futuro o también acerca de las cosas puramente imaginarias? O",
+      "b": "¿Prefiere actuar concretamente o al menos forjar proyectos precisos que preparen realmente el porvenir?"
+    },
+    {
+      "a": "¿Hace Ud. lo que tiene que hacer enseguida y sin que le cueste mucho (por ejemplo: escribir una carta, arreglar un asunto cualquiera)? O",
+      "b": "¿Se siente inclinado a diferir las cosas, a postergarlas?"
+    },
+    {
+      "a": "¿Toma Ud. decisiones inmediatas. aún en los casos difíciles?",
+      "b": "¿Es indeciso y vacila generalmente durante largo tiempo?"
+    },
+    {
+      "a": "¿Es usted movedizo e inquieto(gesticula , se levanta violentamente de su silla , va y viene por la habitación , etc. ) En ausencia de toda emoción viva. O",
+      "b": "¿Está generalmente quieto cuando una emoción no lo agita?"
+    },
+    {
+      "a": "¿No vacila Ud. jamás al emprender una transformación útil cuando sabe que exigirá un gran esfuerzo de su parte? O",
+      "b": "¿Retrocede ante el trabajo a realizar y prefiere contentarse por dicha causa, con el estado de cosas en que está?"
+    },
+    {
+      "a": "¿Cuándo se ha impartido instrucciones para una determinada tarea ¿se desentiende de la ejecución, con el sentimiento de haberse desembarazado de una preocupación? O",
+      "b": "¿Vigila su realización de cerca, asegurándose que todo quede bien hecho en las condiciones y en el momento requeridos?"
+    },
+    {
+      "a": "¿Prefiere Ud. mirar que hacen (siente placer por ejemplo, en observar a menudo y largamente el desarrollo de un juego que no practica? O",
+      "b": "¿Le gusta más actuar que observar pasivamente, resultándose aburrido el simple espectáculo?"
+    },
+    {
+      "a": "¿Esta Ud. a menudo guiado en su acción por la idea de un porvenir lejano (ahorrar para la vejez, acumular y reunir materiales y datos para un trabajo a largo plazo, etc.), o por las consecuencias lejanas que sus actos puedan tener? O",
+      "b": "¿Se interesa especialmente por los resultados inmediatos?"
+    },
+    {
+      "a": "¿Prevé Ud. todo lo que puede hacer y se prepara cuidadosamente para cada caso ( por ejemplo, en ocasión de sus viajes a paseos hace equipajes minuciosos, estudios de itinerarios, previsión de incidentes, etc.) O",
+      "b": "¿Prefiere atenerse a la inspiración del momento?"
+    },
+    {
+      "a": "¿Tiene Ud. principios estrictos a los que trata de ceñirse? O",
+      "b": "¿Prefiere adaptarse a las circunstancias con flexibilidad?"
+    },
+    {
+      "a": "¿Es Ud. constante en sus proyectos?, ¿termina siempre lo que ha comenzado? O",
+      "b": "¿Abandona con frecuencia una tarea antes de terminarla, empezando todo sin concluir nada?"
+    },
+    {
+      "a": "¿Es Ud. constante en sus simpatías, continúa con sus amistades de infancia o frecuenta regularmente las mismas personas y los mismos círculos? O",
+      "b": "¿Cambia a menudo de amigos (dejando por ejemplo, sin razón alguna, de ver a personas que antes frecuentaba)?"
+    },
+    {
+      "a": "¿Después de un acceso de cólera (o si Ud. no encoleriza nunca, después de una discusión), se reconcilia con su circunstancial enemigo quedando su espíritu como si nada hubiera sucedido? O",
+      "b": "¿Durante cierto tiempo permanece de mal humor?……¿Más aún es difícil de reconciliar (resentimiento persistente)?"
+    },
+    {
+      "a": "¿Tiene Ud. hábitos sumamente estrictos a los que está muy apegado?, ¿se siente atraído por el retorno regular de ciertos hechos? O",
+      "b": "¿Siente horror de todo lo que es habitual o previsto de antemano, siendo para Ud. la sorpresa, un elemento esencial de placer?"
+    },
+    {
+      "a": "¿Le gusta el orden, la simetría, la regularidad? O",
+      "b": "¿El orden le parece aburrido y siente la necesidad de encontrar por doquiera una huella de fantasía?"
+    },
+    {
+      "a": "¿Prevee con antelación el empleo de su tiempo y de sus fuerzas?, ¿Es amigo de planes fijos, horarios y trazar programas?",
+      "b": "¿Se lanza a la acción sin regla precisa, fijada de antemano?"
+    },
+    {
+      "a": "Cuándo ha adoptado una opinión ¿Se aferra a ella con obstinación?",
+      "b": "¿Se convence fácilmente de lo contrario y se deja seducir por la novedad de una idea?"
+    }
   ]
 }

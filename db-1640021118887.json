@@ -1,0 +1,246 @@
+{
+  "carreras": [
+    {
+      "id": 1,
+      "title": "COMPOSITOR"
+    },
+    {
+      "id": 2,
+      "title": "ACTOR"
+    },
+    {
+      "id": 3,
+      "title": "ARQUITECTURA"
+    },
+    {
+      "id": 4,
+      "title": "PUBLICISTA"
+    },
+    {
+      "id": 5,
+      "title": "COMUNICACION AUDIOVISUA"
+    },
+    {
+      "id": 6,
+      "title": "CIENCIAS DE LA COMUNICACION"
+    },
+    {
+      "id": 7,
+      "title": "PUBLICISTA GRAFICO"
+    },
+    {
+      "id": 8,
+      "title": "TURISMO"
+    },
+    {
+      "id": 9,
+      "title": "PERIODISMO"
+    },
+    {
+      "id": 10,
+      "title": "ING. QUIMICO"
+    },
+    {
+      "id": 11,
+      "title": "ING. DE SONIDO"
+    },
+    {
+      "id": 12,
+      "title": "GEOLOGIA"
+    },
+    {
+      "id": 13,
+      "title": "MATEMATICAS"
+    },
+    {
+      "id": 14,
+      "title": "METEOROLOGIA"
+    },
+    {
+      "id": 15,
+      "title": "MEDICINA VETERINARIA"
+    },
+    {
+      "id": 16,
+      "title": "MEDICINA HUMANA"
+    },
+    {
+      "id": 17,
+      "title": "ZOOTECNIA"
+    }
+  ],
+  "alumnos": [
+    {
+      "dni": "73693053",
+      "nombre": "FLOR ANALY",
+      "apellido_paterno": "PURIHUAMAN",
+      "apellido_materno": "REYES",
+      "telefono": "973693053",
+      "direccion": " ",
+      "id": 7
+    },
+    {
+      "dni": "74693053",
+      "nombre": "BETSY RUBI",
+      "apellido_paterno": "DIAZ",
+      "apellido_materno": "QUISPESIVANA",
+      "telefono": "974693053",
+      "direccion": " ",
+      "id": 8
+    },
+    {
+      "dni": "77693053",
+      "nombre": "JOSE JUNIOR",
+      "apellido_paterno": "ESPINOZA",
+      "apellido_materno": "ESPINOZA",
+      "telefono": "977693053",
+      "direccion": " ",
+      "id": 9
+    },
+    {
+      "dni": "73693059",
+      "nombre": "CRISTHIAN RICARDO",
+      "apellido_paterno": "CHANTA",
+      "apellido_materno": "SANTOS",
+      "telefono": "973693059",
+      "direccion": " ",
+      "id": 10
+    },
+    {
+      "dni": "73693051",
+      "nombre": "EDERSON ELIEL ",
+      "apellido_paterno": "CONTRERAS",
+      "apellido_materno": "VENTURA",
+      "telefono": "973693051",
+      "direccion": " ",
+      "id": 12
+    },
+    {
+      "dni": "73693052",
+      "nombre": "YENEFFER CARIN",
+      "apellido_paterno": "DE LA CRUZ",
+      "apellido_materno": "MENDOZA",
+      "telefono": "973693052",
+      "direccion": " ",
+      "id": 13
+    },
+    {
+      "dni": "73693054",
+      "nombre": "WILMER",
+      "apellido_paterno": "PURIHUAMAN",
+      "apellido_materno": "REYES",
+      "telefono": "973693054",
+      "direccion": " ",
+      "id": 15
+    },
+    {
+      "nombre": "Jose Diego",
+      "apellido_paterno": "Rodriguez",
+      "apellido_materno": "Chavez",
+      "dni": "74569832",
+      "direccion": "Jr. Razuri #80",
+      "telefono": "974569832",
+      "id": 16
+    },
+    {
+      "nombre": "Martha Maria",
+      "apellido_paterno": "Flores",
+      "apellido_materno": "Nuñes",
+      "dni": "71459863",
+      "direccion": "Av. Lima #356",
+      "telefono": "971459863",
+      "id": 17
+    },
+    {
+      "nombre": "Maria",
+      "apellido_paterno": "Ramirez ",
+      "apellido_materno": "Carranza",
+      "dni": "71459698",
+      "direccion": "Jr. Atahualpa #54",
+      "telefono": "971459698",
+      "id": 18
+    }
+  ],
+  "tutores": [
+    {
+      "nombre": "Jose Diego",
+      "apellido_paterno": "Rodriguez",
+      "apellido_materno": "Chavez",
+      "dni": "74569832",
+      "direccion": "Jr. Razuri #80",
+      "telefono": "974569832",
+      "id": 16,
+      "seccion": "A"
+    },
+    {
+      "nombre": "Martha Maria",
+      "apellido_paterno": "Flores",
+      "apellido_materno": "Nuñes",
+      "dni": "71459863",
+      "direccion": "Av. Lima #356",
+      "telefono": "971459863",
+      "id": 2,
+      "seccion": "B"
+    },
+    {
+      "nombre": "Rodolfo",
+      "apellido_paterno": "Casas",
+      "apellido_materno": "Villanueva",
+      "dni": "74659852",
+      "direccion": "Jr. Razuri #80",
+      "telefono": "974659852",
+      "id": 17,
+      "seccion": "B"
+    }
+  ],
+  "secciones": [
+    {
+      "id": 1,
+      "nombre": "A"
+    },
+    {
+      "id": 2,
+      "nombre": "B"
+    }
+  ],
+  "reglas": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "test": [
+    {
+      "id": 1,
+      "resultado_casm": "ARTE",
+      "resultado_berger": "MOTIVACION",
+      "resultado_lea": "NERVIOSO",
+      "resultado": "ACTOR"
+    },
+    {
+      "id": 2,
+      "resultado_casm": "ARTE",
+      "resultado_berger": "AUTOEVALUACION",
+      "resultado_lea": "COLERICO",
+      "resultado": "DIRECTOR DE CINE"
+    },
+    {
+      "id": 3,
+      "resultado_casm": "ARTE",
+      "resultado_berger": "AUTOEVALUACION",
+      "resultado_lea": "PASIONAL",
+      "resultado": "PINTOR"
+    },
+    {
+      "id": 4,
+      "resultado_casm": "ARTE",
+      "resultado_berger": "AUTOEVALUACION",
+      "resultado_lea": "AMORFO",
+      "resultado": "ACTOR"
+    }
+  ],
+  "reportes": [
+    {}
+  ]
+}
